@@ -13,7 +13,7 @@ def check():
         st.session_state.my_variable = "hi"
     else:
         st.session_state.my_variable = "get lost"
-
+st.header("Log in to Lymph Software Dashboard")
 username = st.text_input("Username", value="")#No label for initial value.
 password = st.text_input("Password",value="", type="password")
 st.button('Log In', on_click=check())
