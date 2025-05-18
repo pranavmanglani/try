@@ -15,10 +15,11 @@ def update_variable():
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
+        header = st.header("Welcome")
     else:
         st.session_state.my_variable = "get lost"
 
-st.header("Log in to Lymph Software Dashboard")
+header = st.header("Log in to Lymph Software Dashboard")
 
 # Input fields
 username = st.text_input("Username", value="")
