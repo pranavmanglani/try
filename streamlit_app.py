@@ -6,7 +6,7 @@ if 'my_variable' not in st.session_state:
 if 'my_input_value' not in st.session_state:
     st.session_state.my_input_value = ""
 if 'header_text' not in st.session_state:
-    st.session_state.header_text = "Welcome to the App"
+    st.session_state.header_text = "Log in To Lymph Softwares"
 # Function to update the variable
 def update_variable():
     st.session_state.my_variable = "w"
@@ -16,7 +16,7 @@ def update_variable():
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
-        st.session_state.header_text = "Hello, User!"
+        st.session_state.header_text = "Welcome"
     else:
         st.session_state.my_variable = "get lost"
         
