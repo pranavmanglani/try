@@ -15,7 +15,7 @@ def check():
         st.session_state.my_variable = "get lost"
 
 username = st.text_input("Username", value="")#No label for initial value.
-password = st.text_input("Password",value="")
+password = st.text_input("Password",value="", type="password")
 st.button('Log In', on_click=check())
 
 st.write(st.session_state.my_variable)
