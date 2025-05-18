@@ -1,11 +1,5 @@
 import streamlit as st
 
-# Initialize the variable in Streamlit's session state
-if 'my_variable' not in st.session_state:
-    st.session_state.my_variable = 0
-if 'my_input_value' not in st.session_state: # Initialize input value
-    st.session_state.my_input_value = ""
-
 # Function to update the variable.  Now also stores input.
 def update_variable():
     st.session_state.my_variable += 1
