@@ -1,13 +1,17 @@
 import streamlit as st
 
-# Function to update the variable.  Now also stores input.
-def update_variable():
-    #st.session_state.my_variable += 1
-    st.session_state.my_variable = "w"
-    #st.write(f"Variable updated to: {st.session_state.my_variable}")
-    st.session_state.my_input_value = username
-    st.session_state.my_input_value = password# Store the input
+# Initialize session state variables if they don't exist
+if 'my_variable' not in st.session_state:
+    st.session_state.my_variable = ""
+if 'my_input_value' not in st.session_state:
+    st.session_state.my_input_value = ""
 
+# Function to update the variable
+def update_variable():
+    st.session_state.my_variable = "w"
+    st.session_state.my_input_value = username
+
+# Function to check credentials and redirect
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
@@ -16,8 +20,13 @@ def check():
         st.session_state.my_variable = "get lost"
 
 st.header("Log in to Lymph Software Dashboard")
-username = st.text_input("Username", value="")
-password = st.text_input("Password",value="", type="password")
-st.button('Log In', on_click=check())
 
+# Input fields
+username = st.text_input("Username", value="")
+password = st.text_input("Password", value="", type="password")
+
+# Login button
+st.button('Log In', on_click=check)
+
+# Display session state variable
 st.write(st.session_state.my_variable)
