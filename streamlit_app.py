@@ -15,8 +15,8 @@ def check():
         st.session_state.my_variable = "get lost"
         
 
-#Display the current value
-#st.write(f"Current value of my_variable: {st.session_state.my_variable}")
+Display the current value
+st.write(st.session_state.my_variable)
 
 # Create the button.
 #st.button("Click me to increment the variable", on_click=update_variable)
