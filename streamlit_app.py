@@ -15,7 +15,6 @@ def update_variable():
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
-        st.switch_page("try/redirect.py")
     else:
         st.session_state.my_variable = "get lost"
 
@@ -26,7 +25,7 @@ username = st.text_input("Username", value="")
 password = st.text_input("Password", value="", type="password")
 
 # Login button
-st.button('Log In', on_click=check)
+st.button('Log In', on_click=check())
 
 # Display session state variable
 st.write(st.session_state.my_variable)
