@@ -19,7 +19,8 @@ def check():
         st.session_state.header_text = "Hello, User!"
     else:
         st.session_state.my_variable = "get lost"
-
+        
+st.header(st.session_state.header_text)
 # Input fields
 username = st.text_input("Username", value="")
 password = st.text_input("Password", value="", type="password")
