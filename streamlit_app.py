@@ -22,6 +22,6 @@ def check():
 #st.button("Click me to increment the variable", on_click=update_variable)
 username = st.text_input("Username", value="")#No label for initial value.
 password = st.text_input("Password",value="")
-st.button("Hi", check())
+st.button('Press this button', on_click=check())
 
 
