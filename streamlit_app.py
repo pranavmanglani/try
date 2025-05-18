@@ -13,13 +13,7 @@ def check():
         st.session_state.my_variable = "hi"
     else:
         st.session_state.my_variable = "get lost"
-        
 
-#Display the current value
-
-
-# Create the button.
-#st.button("Click me to increment the variable", on_click=update_variable)
 username = st.text_input("Username", value="")#No label for initial value.
 password = st.text_input("Password",value="")
 st.button('Press this button', on_click=check())
