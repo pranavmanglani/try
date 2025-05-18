@@ -7,7 +7,7 @@ def update_variable():
     st.session_state.my_input_value = username
     st.session_state.my_input_value = password# Store the input
 
-# Display the current value
+#Display the current value
 #st.write(f"Current value of my_variable: {st.session_state.my_variable}")
 
 # Create the button.
