@@ -15,7 +15,7 @@ def update_variable():
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
-        st.switch_page("redirect.py")
+        st.switch_page("try/redirect.py")
     else:
         st.session_state.my_variable = "get lost"
 
