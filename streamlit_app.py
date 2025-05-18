@@ -11,9 +11,7 @@ def update_variable():
 def check():
     if username == "pranav" and password == "pranav1875":
         st.session_state.my_variable = "hi"
-        direct_url = "https://www.example.com" 
-        st.markdown(f'<meta http-equiv="refresh" content="0;url={redirect_url}">', unsafe_allow_html=True)
-        time.sleep(0.1)
+        st.switch_page("redirect.py")
     else:
         st.session_state.my_variable = "get lost"
 
