@@ -16,7 +16,7 @@ def check():
         
 
 #Display the current value
-st.write(st.session_state.my_variable)
+
 
 # Create the button.
 #st.button("Click me to increment the variable", on_click=update_variable)
@@ -24,4 +24,4 @@ username = st.text_input("Username", value="")#No label for initial value.
 password = st.text_input("Password",value="")
 st.button('Press this button', on_click=check())
 
-
+st.write(st.session_state.my_variable)
