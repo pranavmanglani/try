@@ -15,7 +15,7 @@ def check():
         st.session_state.my_variable = "get lost"
         
 
-Display the current value
+#Display the current value
 st.write(st.session_state.my_variable)
 
 # Create the button.
